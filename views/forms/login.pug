@@ -1,0 +1,17 @@
+extends ../layouts/navbar.pug
+
+block css
+    link(rel="stylesheet",href="./css/signup.css")
+
+block content
+    div.main-cont
+        form(action="/login" method="POST")
+            div.mb-3
+                label.form-label(for="EmailControlInput") Email address
+                input.form-control#EmailControlInput(type="email" placeholder="name@example.com" name="email")
+            div.mb-3
+                label.form-label(for="PWControlInput") Password
+                input.form-control#PWControlInput(type="password" placeholder="somepassword" name="password")
+            div.mb-3.btn-div
+                input(type="hidden", name="_csrf" value=csrfToken)
+                button(type="submit" class="btn btn-primary") Submit

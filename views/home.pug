@@ -1,0 +1,21 @@
+extends ./layouts/navbar.pug
+block css
+	link(rel="stylesheet", href="css/main.css")
+block content
+	div.headings
+		div
+			h1 CLIMATE CHANGE
+			h3 The next big concern
+	div.chartSection
+		div.chart
+			iframe.nasaSeaChart(src="https://climate.nasa.gov/embed/133" width="580" height="500" scrolling="no" frameborder="0" style="margin:16px;")
+			h1 Sea Levels are increasing
+	div.finalSection
+			div.card.tempCard
+				div.glacierImg
+					img(src="images/glacier.jpg")
+				p Awaken your environmentalist
+			div.card.loginCard
+				p What are you waiting for
+				span 
+					a(href="/login") Register Now

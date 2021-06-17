@@ -1,0 +1,29 @@
+{
+  "name": "climate",
+  "version": "1.0.0",
+  "description": "A climate app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "climate"
+  ],
+  "author": "Rishi Saraf",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "connect-mongodb-session": "^2.4.1",
+    "csurf": "^1.11.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "gridfs-stream": "^1.1.1",
+    "mongoose": "^5.12.13",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.2.0",
+    "nodemon": "^2.0.7",
+    "pug": "^3.0.2"
+  }
+}

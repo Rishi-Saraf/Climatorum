@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+body{
+
+	font-family: 'Source Sans Pro', sans-serif;
+	padding:0;
+	margin:0;
+}
+nav{
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-image: linear-gradient(60deg,#24E72A,#0B656F);
+	font-weight: 1000;
+}
+
+ul{
+	list-style: none;
+}
+
+.left-allign{
+	display: flex;
+	flex-direction: row;
+}
+
+.left-allign li{
+	padding: 1vh 1vw;
+	margin:0.4vh 1vw;
+	transition: 0.4s background-color;
+}
+
+.left-allign li:hover{
+	background-color: white;
+	border-radius: 3px;
+}
+
+.right-allign li{
+	margin: 1vh 3vw;
+}
+
+footer{
+	display: flex;
+	padding: 3vh 0vw;
+	color: white;
+	font-weight:1000;
+	background-color: black;
+	flex-direction: row;
+	justify-content: center;
+	width: auto;
+	width: 100%;
+}
+
+.right-allign button{
+	padding: 1vh 2vw;
+	border-radius: 5%;
+	background-image: linear-gradient(to right, #028DBB 50%,#7A90EB 50%);
+	box-shadow: none;
+	box-shadow: 0px 0px 0px transparent;
+	border: 0px solid transparent;
+	font-weight: 500;
+	color:white;
+	background-size:200%; 
+	transition: background-position 0.3s,box-shadow 0.1s;
+}
+
+.right-allign button:hover{
+	background-position:100%;
+}
+
+.right-allign button:active{
+	box-shadow: 1px 2px 1px #2F95D3;
+}
+
+.myself{
+	color: white;
+}
+
+.headings::before{
+	content: '';
+    background: url(../images/environment.png) no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.35;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.headings{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	vertical-align: center;
+	width: 98vw;
+    height: 90vh;
+    align-items: center;
+}
+
+.headings div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Merriweather', serif;		
+	font-size: larger;
+	letter-spacing: 10px;
+
+}
+
+.headings div h1{
+	letter-spacing: 19px;
+    background: antiquewhite;
+    padding: 19px;
+    border-radius:5px;
+    border: double black 2px;
+}
+
+.chart{
+	margin: 19px;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart h1{
+	padding: 25px;
+    background-color: cadetblue;
+    margin: 30px;
+    border: black 3px solid;
+    border-radius: 7px;
+}
+
+.nasaSeaChart{
+	margin: 10vh 5vw;
+}
+
+.finalSection{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: rgb(20,41,108);
+	background: linear-gradient(50deg, rgba(20,41,108,1) 0%, rgba(33,224,255,1) 100%);	
+}
+
+.card{
+	font-weight: 1000;
+	font-size: x-large;
+	padding:6vh 8vw;
+	margin: 2vw 2vh;
+	border: 2.5px black double;
+}
+
+.loginCard{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgb(65,177,65);
+	background: linear-gradient(0deg, rgba(65,177,65,1) 0%, rgba(9,240,63,1) 100%);
+	color: white;
+}
+
+.loginCard *{
+	background-color: #3e5294;
+	padding:2px;
+}
+
+.loginCard a{
+	text-decoration: underline;
+	color: white;
+}
+
+.glacierImg img{
+	width: 100%;
+	height: auto;
+}
+
+.glacierImg{
+	width: 16vw;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+.tempCard{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgb(34,195,193);
+	background: linear-gradient(0deg, rgba(34,195,193,1) 0%, rgba(60,253,45,1) 100%);
+}
+
+.tempCard p{
+	padding: 4px 5px;
+    background-color: aquamarine;
+    border: 2px solid black
+}
+
+.img-container{
+    width: 6.5vh;
+    height: 6.5vh;
+}
+
+.img-container img{
+	border-radius: 50%;
+	width: 100%;
+	height: auto;
+}
+
+.dropdown-menu{
+	width:10vh;
+}

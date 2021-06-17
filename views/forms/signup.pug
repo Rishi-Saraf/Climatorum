@@ -1,0 +1,24 @@
+extends ../layouts/navbar.pug
+
+block css
+    link(rel="stylesheet",href="./css/signup.css")
+
+block content
+    div.main-cont
+        form(action="/signup" method="POST" enctype="multipart/form-data")
+            div.mb-3
+                label.form-label(for="NameControlInput") Name
+                input.form-control#NameControlInput(type="text" placeholder="firstname surname" name="name")
+            div.mb-3
+                label.form-label(for="EmailControlInput") Email address
+                input.form-control#EmailControlInput(type="email" placeholder="name@example.com" name="email")
+            div.mb-3
+                label.form-label(for="PWControlInput") Password
+                input.form-control#PWControlInput(type="password" placeholder="somepassword" name="password")
+            div.mb-3
+                label(for="formFile" class="form-label") Default file input example
+                input(class="form-control" type="file" id="formFile" name="profilePic")
+            div.mb-3.btn-div
+                input(type="hidden", name="_csrf" value=csrfToken)
+                button(type="submit" class="btn btn-primary") Submit
+        a(href="/login") Already have an accout? Login.
